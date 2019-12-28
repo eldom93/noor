@@ -1,6 +1,28 @@
+.News{
+ 
+}
+
 .news-box{
     display: flex;
     flex-direction:row;
     justify-content:center;
     align-items:center;
+    border:2px solid grey;
+    border-radius:.5rem;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin:.5rem;
+}
+
+.date {
+    display:block;
+    float:right;
+    margin:.225rem;
+    padding:.225rem;
+}
+
+.description{
+    text-align:left;
+    margin:.225rem;
+    padding:.225rem;
 }
