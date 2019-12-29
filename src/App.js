@@ -7,6 +7,7 @@ import NavBar from './NavBar/NavBar';
 import News from './News/News';
 import Event from './Event/Event';
 import Hero from './Hero/Hero';
+import ActionItem from './ActionItem/ActionItem';
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,9 @@ function App() {
 
 <br /><br /><br /> <br />
 <Hero />
+<br /><br /><br /> <br />
+<ActionItem />
+<br />
     </div>
   );
 }

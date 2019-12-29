@@ -17,12 +17,12 @@ class Hero extends React.Component {
         return(
           <div>
            
-           <video ref="vidRef" src="https://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+           <video id="myVideo" ref="vidRef" src="https://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
 
-        <div class="content">
-          <h1>Heading</h1>
+        <div className="content">
+          <h1>AL NOUR SCHOOL</h1>
           <p>
             Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat
             phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum
