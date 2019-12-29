@@ -2,7 +2,9 @@
     border: 2px solid grey;
     width: 350px;
     border-radius: .5rem;
-
+    left: 50%;
+    display: inline-table;
+    margin-bottom: 60px;
 }
 .triangle {
     color: white;
@@ -16,6 +18,9 @@
     float: left;
     position: absolute;
     z-index: 3;
+    margin-left: .5rem;
+    padding-top: 1rem;
+    font-weight: 400;
 }
 .event-date {
     text-align: left;

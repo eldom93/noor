@@ -48,7 +48,7 @@ class TabbedMenu extends React.Component {
     };
     this.setState(state => ({
       content: state.content.replace(this.state.content, newTab),
-      className: state.className.replace('active', ' ')
+      className: this.state.className.replace('active', ' ')
     }));
   
   }
