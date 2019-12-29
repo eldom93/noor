@@ -9,36 +9,7 @@ function NavBar() {
     <span className="hamburger-inner"></span>
   </span>
 </button>  
-      <ul className="list">
-      <li className="logo">
-          <a className="menu-link" href="/">
-            Logo
-          </a>
-        </li>
-        <li className="list-item">
-          <a className="menu-link" href="/">
-            About Us
-          </a>
-        </li>
-        <li className="list-item">
-          <a className="menu-link" href="/">
-            Contact Us
-          </a>
-        </li>
-
-        <li className="list-item">
-          <a className="menu-link" href="/">
-            News and Events
-          </a>
-        </li>
-
-        <li className="list-item">
-          <a className="menu-link" href="/">
-            Classes
-          </a>
-        </li>
-  
-      </ul>
+ 
     
     </div>
   );
