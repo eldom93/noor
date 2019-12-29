@@ -15,11 +15,13 @@
     min-width: 100%; 
     min-height: 100%;
   }
-  
+  .header{
+font-size:96px;
+  }
   .content {
     position: fixed;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.68);
     color: #f1f1f1;
     width: 100%;
     padding: 20px;

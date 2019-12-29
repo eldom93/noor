@@ -1,0 +1,49 @@
+.Bio{
+    margin:.625rem;
+    padding:.625rem;
+   
+}
+.name{
+    margin-top:250px;
+}
+.bio-image{
+    border:2px solid #000000;
+}
+
+.holder {
+    position: relative;
+    width: 200px;
+    height: 50px;
+}
+.clip {
+    /* Clip edges, as some of the lines don't terminate nicely. */
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    width: 20px;
+    /* Height set to clip correctly basically background-size/2 + line width */
+    height: 260px;
+    left:25%;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:200px;
+    margin-left:2.625rem;
+  }
+.line1 {
+    background: linear-gradient(45deg, transparent, transparent 49%, red 49%, transparent 51%);
+}
+.line2 {
+    background: linear-gradient(-45deg, transparent, transparent 49%, red 49%, transparent 51%);
+}
+.line {
+    /* Must be after background definition. */
+    background-size: 50px 50px;
+}
+
