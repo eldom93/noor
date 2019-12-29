@@ -1,0 +1,43 @@
+.Events {
+    border: 2px solid grey;
+    width: 350px;
+    border-radius: .5rem;
+
+}
+.triangle {
+    color: white;
+    fill: white;
+    float: left;
+    display: block;
+}
+.time {
+    text-align: left;
+    display: block;
+    float: left;
+    position: absolute;
+    z-index: 3;
+}
+.event-date {
+    text-align: left;
+    display: block;
+    float: left;
+    position: absolute;
+    z-index: 3;
+    margin:.225rem;
+    padding:.225rem;
+}
+span.triangle {
+    font-size: 150px;
+    position: absolute;
+    z-index: 2;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    margin-top:-52px;
+}
+
+.image{
+    display:relative;
+    z-index: 1; 
+  
+}
