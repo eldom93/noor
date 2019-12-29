@@ -6,6 +6,7 @@ import TabbedMenu from './TabbedMenu/TabbedMenu';
 import NavBar from './NavBar/NavBar';
 import News from './News/News';
 import Event from './Event/Event';
+import Hero from './Hero/Hero';
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,9 @@ function App() {
 <News />
 <br /><br /><br /> <br />
 <Event />
+
+<br /><br /><br /> <br />
+<Hero />
     </div>
   );
 }

@@ -31,16 +31,16 @@
     margin:.225rem;
     padding:.225rem;
 }
+
 span.triangle {
-    font-size: 150px;
+    margin-top: -13px;
+    top: auto;
+    font-size: 8.5rem;
     position: absolute;
     z-index: 2;
     padding: 0px;
-    margin: 0px;
     float: left;
-    margin-top:-52px;
 }
-
 .image{
     display:relative;
     z-index: 1; 
