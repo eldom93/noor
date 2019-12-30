@@ -1,20 +1,12 @@
 import React from "react";
-//import logo from './logo.svg';
 import "./App.css";
-
-import Content from "./Content/Content";
-import NavBar from "./NavBar/NavBar";
 import Footer from "./Footer/Footer";
-/*import Home from './Home/Home';
-import Class from './Class/Class';
-import NewsEvents from './NewsEvents/NewsEvents';
-import ContactUs from './ContactUs/ContactUs';
-import About from './About/About';
-*/
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch,
+  useParams } from "react-router-dom";
 
 function App() {
   return (
+   
     <Router>
       <div className="App">
         <nav>
@@ -42,11 +34,16 @@ function App() {
                 About Us
               </Link>
             </li>
+            <li className="list-item">
+              <Link to="/topics">
+               Topics
+              </Link>
+            </li>
           </ul>
         </nav>
         <Switch>
-          <Route path="/">
-            <Home />
+        <Route path="/about">
+            <About />
           </Route>
           <Route path="/class">
             <Class />
@@ -57,11 +54,13 @@ function App() {
           <Route path="/contact-us">
             <ContactUs />
           </Route>
-          <Route path="/about">
-            <About />
+          <Route path="/topics">
+            <Topics />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
-
         <Footer />
       </div>
     </Router>
@@ -85,6 +84,38 @@ function NewsEvents() {
 
 function ContactUs() {
   return <h2>Contact Us</h2>;
+}
+function Topics() {
+  let match = useRouteMatch();
+
+  return (
+    <div>
+      <h2>Class Schedules</h2>
+      <ul>
+        <li>
+          <Link to={`${match.url}/class-subject`}>Class Subject</Link>
+        </li>
+        <li>
+          <Link to={`${match.url}/age-group`}>
+            Age Group
+          </Link>
+        </li>
+      </ul>
+      <Switch>
+        <Route path={`${match.path}/:topicId`}>
+          <Topic />
+        </Route>
+        <Route path={match.path}>
+          <h3>Please select a topic.</h3>
+        </Route>
+      </Switch>
+    </div>
+  );
+}
+
+function Topic() {
+  let { topicId } = useParams();
+  return <h3>Requested topic ID: {topicId}</h3>;
 }
 
 export default App;
