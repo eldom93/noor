@@ -15,7 +15,7 @@ function App() {
               <Link to="/">Logo</Link>
             </li>
             <li className="list-item">
-              <Link className="menu-link" to="/classes">
+              <Link className="menu-link" to="/class">
                 Classes
               </Link>
             </li>
@@ -42,6 +42,9 @@ function App() {
           </ul>
         </nav>
         <Switch>
+        <Route path="/topics">
+            <Topics />
+          </Route>
         <Route path="/about">
             <About />
           </Route>
@@ -53,9 +56,6 @@ function App() {
           </Route>
           <Route path="/contact-us">
             <ContactUs />
-          </Route>
-          <Route path="/topics">
-            <Topics />
           </Route>
           <Route path="/">
             <Home />
@@ -89,7 +89,7 @@ function Topics() {
   let match = useRouteMatch();
 
   return (
-    <div>
+    <section>
       <h2>Class Schedules</h2>
       <ul>
         <li>
@@ -109,7 +109,7 @@ function Topics() {
           <h3>Please select a topic.</h3>
         </Route>
       </Switch>
-    </div>
+    </section>
   );
 }
 

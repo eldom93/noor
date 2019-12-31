@@ -5,21 +5,21 @@ function News() {
   return (
     <div className="News">
         <div className="news-box">
-            <img width="150px" src={image} />
+            <img width="150px" alt="News" src={image} />
             <div className="container">
                 <h3 className="date">11/25/2019</h3>
                 <p className="description">Search No More here at Al Noor School We provide</p>
             </div>  
         </div>
         <div className="news-box">
-            <img width="150px" src={image} />
+            <img alt="News second" width="150px" src={image} />
             <div className="container">
                 <h3 className="date">11/25/2019</h3>
                 <p className="description">Search No More here at Al Noor School We provide</p>
             </div>  
         </div>
         <div className="news-box">
-            <img width="150px" src={image} />
+            <img alt="News third" width="150px" src={image} />
             <div className="container">
             <h3 className="date">11/25/2019</h3>
             <p className="description">Search No More here at Al Noor School We provide</p>

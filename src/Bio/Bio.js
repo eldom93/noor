@@ -4,7 +4,7 @@ import image from "./headshot.jpg";
 function Bio() {
   return (
     <div className="Bio">
-      <img className="bio-image" width="300px" src={image} />
+      <img alt="Headshot" className="bio-image" width="300px" src={image} />
       <div class="holder">
     <div class="line line1"></div>
     <div class="line line2"></div>

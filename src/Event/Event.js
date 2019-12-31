@@ -8,7 +8,7 @@ function Event() {
             <span className="triangle">&#9700;</span>
             <p className="event-date">11/30/2019</p>
             <p className="time">5:30 PM</p>
-            <img className="image" width="350px" src={image} />
+            <img alt="Event" className="image" width="350px" src={image} />
             <path d="M 175 200 l 150 0" stroke="green" stroke-width="3"
   fill="green" />
             <div className="description">
