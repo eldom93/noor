@@ -5,7 +5,7 @@ function Form() {
   return (
     <div className="Form">
         <h1>Form Elements</h1>
-        <form action="ex.php" method="get">
+        <form action="ex.php" method="GET">
             User: <input type="text" name="usr_name"/>
             Encryption: <keygen name="security" />
             <input type="submit" />

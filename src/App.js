@@ -1,12 +1,10 @@
 import React from "react";
 import "./App.css";
 import Footer from "./Footer/Footer";
-import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch,
-  useParams } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from "react-router-dom";
 
 function App() {
   return (
-   
     <Router>
       <div className="App">
         <nav>
@@ -15,7 +13,7 @@ function App() {
               <Link to="/">Logo</Link>
             </li>
             <li className="list-item">
-              <Link className="menu-link" to="/class">
+              <Link className="menu-link" to="/classes">
                 Classes
               </Link>
             </li>
@@ -35,21 +33,21 @@ function App() {
               </Link>
             </li>
             <li className="list-item">
-              <Link to="/topics">
-               Topics
+              <Link to="/classes">
+               Classes
               </Link>
             </li>
           </ul>
         </nav>
         <Switch>
-        <Route path="/topics">
-            <Topics />
+        <Route path="/classes">
+            <Classes />
           </Route>
         <Route path="/about">
             <About />
           </Route>
-          <Route path="/class">
-            <Class />
+          <Route path="/classes">
+            <Classes />
           </Route>
           <Route path="/news-and-events">
             <NewsEvents />
@@ -74,10 +72,6 @@ function About() {
   return <h2>About</h2>;
 }
 
-function Class() {
-  return <h2>Classes</h2>;
-}
-
 function NewsEvents() {
   return <h2>News and Events</h2>;
 }
@@ -85,12 +79,17 @@ function NewsEvents() {
 function ContactUs() {
   return <h2>Contact Us</h2>;
 }
-function Topics() {
+
+function Classes() {
   let match = useRouteMatch();
 
   return (
     <section>
       <h2>Class Schedules</h2>
+      <form action="example.php">
+      <label>Age Range</label><br />
+        <input type="range" name="age" min="5" max="17"/><br />
+        </form>
       <ul>
         <li>
           <Link to={`${match.url}/class-subject`}>Class Subject</Link>
@@ -102,8 +101,8 @@ function Topics() {
         </li>
       </ul>
       <Switch>
-        <Route path={`${match.path}/:topicId`}>
-          <Topic />
+        <Route path={`${match.path}/:classId`}>
+          <Class />
         </Route>
         <Route path={match.path}>
           <h3>Please select a topic.</h3>
@@ -113,9 +112,9 @@ function Topics() {
   );
 }
 
-function Topic() {
-  let { topicId } = useParams();
-  return <h3>Requested topic ID: {topicId}</h3>;
+function Class() {
+  let { classId } = useParams();
+  return <h3>Requested topic ID: { classId }</h3>;
 }
 
 export default App;
