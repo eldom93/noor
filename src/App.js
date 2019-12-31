@@ -89,6 +89,10 @@ function Classes() {
       <form action="example.php">
       <label>Age Range</label><br />
         <input type="range" name="age" min="5" max="17"/><br />
+        <label>Class Subject</label><br/>
+        <select type="select" value="Subject" name="subject">
+        <option>Quran</option><option>Dean</option><option>Arabic</option>
+        </select><br />
         </form>
       <ul>
         <li>
