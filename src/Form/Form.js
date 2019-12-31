@@ -5,6 +5,11 @@ function Form() {
   return (
     <div className="Form">
         <h1>Form Elements</h1>
+        <form action="ex.php" method="get">
+            User: <input type="text" name="usr_name"/>
+            Encryption: <keygen name="security" />
+            <input type="submit" />
+        </form>
     <form>
         <label>Age Range</label><br />
         <input type="range" name="age" min="5" max="17"/><br />
@@ -35,7 +40,13 @@ function Form() {
                 <option value="Opera" />
                 <option value="Safari" />
             </datalist>
-         
+
+    </form>
+    <p>Performs a calculation and shows the result in an output element</p>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+    <input type="range"id="a"value="50"/>100 +
+    <imput type="number"id="b"value="50"/>=
+    <output name="x"for="a b"></output>
     </form>
     </div>
   );
